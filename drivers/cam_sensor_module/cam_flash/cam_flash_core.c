@@ -12,6 +12,8 @@
 #include "cam_common_util.h"
 #include "cam_packet_util.h"
 
+int wled_flash_led_prepare(struct led_trigger *trigger, int options, int *max_current);
+
 int cam_flash_led_prepare(struct led_trigger *trigger, int options,
 	int *max_current, bool is_wled)
 {
